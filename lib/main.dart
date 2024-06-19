@@ -15,7 +15,21 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.indigo[400],
       ),
       body: Center(
-        child: Image.network('https://images.unsplash.com/photo-1507499739999-097706ad8914?q=80&w=1978&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')
+        child: ElevatedButton.icon(
+            onPressed: () {
+              print('you have mailed me');
+            },
+            label: const Text('mail me'),
+            icon: Icon(Icons.mail),
+            style: ElevatedButton.styleFrom(
+              foregroundColor: Colors.deepOrange
+            ),
+        ),
+        // Icon(
+        //   Icons.airport_shuttle,
+        //   color: Colors.lightBlue,
+        //   size: 70.0,
+        // ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () { },
